@@ -1,7 +1,7 @@
 export const useHooks = () => {
-    const handleButtonClick = () => {
-        alert('Im being clicked!')
-    }
+  const handleButtonClick = () => {
+    alert("Im being clicked!");
+  };
 
-    return { handleButtonClick };
-}
+  return { handleButtonClick };
+};
