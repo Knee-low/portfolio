@@ -16,8 +16,8 @@ export default [
       "@typescript-eslint": eslintPluginTypeScript.default,
     },
     rules: {
-      "@typescript-eslint/no-unused-vars": "warn",
-      "no-console": "warn",
+      "@typescript-eslint/no-unused-vars": "error",
+      "no-console": "error",
     },
   },
 ];
