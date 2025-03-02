@@ -1,4 +1,4 @@
-import { Box, chakra, Icon } from "@chakra-ui/react";
+import { Box, chakra, Icon, SystemStyleObject } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { IconType } from "react-icons";
 
@@ -7,8 +7,8 @@ interface ButtonProps {
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
   icon?: IconType;
-  sx?: any;
-  iconSx?: any
+  sx?: SystemStyleObject;
+  iconSx?: SystemStyleObject;
 }
 
 export const CustomButton = ({ children, ...props }: ButtonProps) => {
