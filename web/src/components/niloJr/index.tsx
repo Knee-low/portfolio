@@ -1,18 +1,48 @@
-import { HStack } from "@chakra-ui/react";
+import { Center, GridItem, HStack, SimpleGrid } from "@chakra-ui/react";
 import { useHooks } from "./hooks";
-import { Button } from "@/components/ui/chargedComponents/Button";
+import { UserCardInfo } from "./userCard";
 
 export const NiloJrPage = () => {
-  const { handleButtonClick } = useHooks();
+  const {} = useHooks();
   return (
-    <HStack {...customStyles}>
-      <Button onClick={handleButtonClick}>Click me!</Button>
+    <HStack {...customHStackStyles}>
+      <SimpleGrid {...customSimpleGridStyles}>
+        <GridItem colSpan={{ base: 2, md: 3 }}>
+          <Center {...customCenterStyles}>
+            <UserCardInfo />
+          </Center>
+        </GridItem>
+        <GridItem colSpan={{ base: 2, md: 3 }}>
+          <Center {...customCenterStyles} breakBefore="page">
+            Feed will be added here
+          </Center>
+        </GridItem>
+      </SimpleGrid>
     </HStack>
   );
 };
 
-const customStyles = {
-  justify: "center",
+const commonStyles = {
   align: "center",
-  height: "90vh",
+  justify: "center",
+};
+
+const customHStackStyles = {
+  ...commonStyles,
+};
+
+const customSimpleGridStyles = {
+  ...commonStyles,
+  mt: "25px",
+  columns: { base: 2, md: 6 },
+  gap: { base: "24px", md: "40px" },
+  w: "90%",
+};
+
+const customCenterStyles = {
+  ...commonStyles,
+  h: "fit-content",
+  borderRadius: "md",
+  borderColor: "red.400",
+  color: "white",
 };
