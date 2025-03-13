@@ -71,7 +71,7 @@ const customCardStyles = {
   w: "fit-content",
   bg: "white/0",
   maxHeight: "fit-content",
-  mt: "25px"
+  mt: "25px",
 };
 const customBodyCardStyles = {
   w: "100%",

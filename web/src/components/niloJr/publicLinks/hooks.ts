@@ -1,5 +1,10 @@
 import { IconType } from "react-icons";
-import { AiFillGithub, AiFillLinkedin, AiFillMail, AiOutlineEnvironment } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillMail,
+  AiOutlineEnvironment,
+} from "react-icons/ai";
 
 export interface UserLinks {
   icon: IconType;
@@ -9,8 +14,8 @@ export interface UserLinks {
 export const useHooks = () => {
   const userLinks: UserLinks[] = [
     {
-        icon: AiOutlineEnvironment,
-        url: process.env.NEXT_PUBLIC_LOCATION_URL ?? "",
+      icon: AiOutlineEnvironment,
+      url: process.env.NEXT_PUBLIC_LOCATION_URL ?? "",
     },
     {
       icon: AiFillMail,
