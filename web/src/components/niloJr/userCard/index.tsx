@@ -1,9 +1,8 @@
 import { Card, Text } from "@chakra-ui/react";
-import { CustomButton } from "@/components/ui/chargedComponents/Button";
 import { Avatar } from "@/components/ui/avatar";
 import { useHooks } from "./hooks";
 import { MenuItemsCard } from "@/components/niloJr/menuItemsCard";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { PublicLinks } from "@/components/niloJr/publicLinks";
 
 export const UserCardInfo = () => {
   const {
@@ -58,26 +57,7 @@ export const UserCardInfo = () => {
         </Card.Body>
       </Card.Body>
       <Card.Footer justifyContent="right">
-        <CustomButton
-          icon={AiFillGithub}
-          onClick={() =>
-            window.open(process.env.NEXT_PUBLIC_GITHUB_URL, "_blank")
-          }
-          sx={{
-            px: 1,
-            bg: "white/0",
-            _hover: { bg: "blue.600/0" },
-          }}
-          iconSx={{ color: "white/30", _hover: { color: "white" } }}
-        ></CustomButton>
-        <CustomButton
-          icon={AiFillLinkedin}
-          onClick={() =>
-            window.open(process.env.NEXT_PUBLIC_LINKEDIN_URL, "_blank")
-          }
-          sx={{ px: 1, bg: "white/0", _hover: { bg: "blue.600/0" } }}
-          iconSx={{ color: "white/30", _hover: { color: "white" } }}
-        ></CustomButton>
+        <PublicLinks />
       </Card.Footer>
     </Card.Root>
   );
@@ -91,6 +71,7 @@ const customCardStyles = {
   w: "fit-content",
   bg: "white/0",
   maxHeight: "fit-content",
+  mt: "25px"
 };
 const customBodyCardStyles = {
   w: "100%",

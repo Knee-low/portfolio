@@ -1,6 +1,7 @@
 import { Center, GridItem, HStack, SimpleGrid } from "@chakra-ui/react";
 import { useHooks } from "./hooks";
 import { UserCardInfo } from "./userCard";
+import { UserFeed } from "./userFeed";
 
 export const NiloJrPage = () => {
   const {} = useHooks();
@@ -8,13 +9,19 @@ export const NiloJrPage = () => {
     <HStack {...customHStackStyles}>
       <SimpleGrid {...customSimpleGridStyles}>
         <GridItem colSpan={{ base: 2, md: 3 }}>
-          <Center {...customCenterStyles}>
+          <Center
+            {...customCenterStyles}
+            position="sticky"
+            top="1px"
+            left="1px"
+            zIndex="1000"
+          >
             <UserCardInfo />
           </Center>
         </GridItem>
         <GridItem colSpan={{ base: 2, md: 3 }}>
-          <Center {...customCenterStyles} breakBefore="page">
-            Feed will be added here
+          <Center {...customCenterStyles} breakBefore="page" mt="25px" w="40vw">
+            <UserFeed />
           </Center>
         </GridItem>
       </SimpleGrid>
@@ -33,7 +40,6 @@ const customHStackStyles = {
 
 const customSimpleGridStyles = {
   ...commonStyles,
-  mt: "25px",
   columns: { base: 2, md: 6 },
   gap: { base: "24px", md: "40px" },
   w: "90%",
