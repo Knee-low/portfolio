@@ -20,7 +20,7 @@ export const NiloJrPage = () => {
           </Center>
         </GridItem>
         <GridItem colSpan={{ base: 2, md: 3 }}>
-          <Center {...customCenterStyles} breakBefore="page" mt="25px" w="40vw">
+          <Center {...customCenterStyles} breakBefore="page" mt="25px">
             <UserFeed />
           </Center>
         </GridItem>
