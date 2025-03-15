@@ -114,7 +114,7 @@ export const UserFeed = () => {
                     </Grid>
                   </Center>
                 );
-              }
+              },
             )}
           </Stack>
         </Box>

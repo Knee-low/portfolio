@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 export const useHooks = () => {
-  const router = useRouter()
+  const router = useRouter();
   const [active, setActive] = useState("about");
 
   const menuItems = [
@@ -12,7 +12,7 @@ export const useHooks = () => {
   ];
 
   const onClickMenuItem = (id: string) => {
-    router.push(`/#${id}`)
+    router.push(`/#${id}`);
     setActive(id);
   };
 
