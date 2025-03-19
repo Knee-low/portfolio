@@ -110,10 +110,10 @@
   dependencies:
     "@babel/types" "^7.26.9"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3":
-  version "7.26.9"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.9.tgz#aa4c6facc65b9cb3f87d75125ffd47781b475433"
-  integrity sha512-aA63XwOkcl4xxQa3HjPMqOP6LiK0ZDv3mUPYEFXkpHbaFjtGggE1A61FjFzJnB+p7/oy2gA8E+rcBNl/zC1tMg==
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.26.10":
+  version "7.26.10"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.10.tgz#a07b4d8fa27af131a633d7b3524db803eb4764c2"
+  integrity sha512-2WJMeRQPHKSPemqk/awGrAiuFfzBmOIPXKizAsVhWH9YJqLZ0H+HS4c8loHGgW6utJ3E/ejXQUsiGaQy2NZ9Fw==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -918,13 +918,21 @@
     "@zag-js/types" "0.82.1"
     "@zag-js/utils" "0.82.1"
 
-"@zag-js/core@0.82.1":
-  version "0.82.1"
-  resolved "https://registry.yarnpkg.com/@zag-js/core/-/core-0.82.1.tgz#8e9bd920a3a479492b82ea8deb58becd1d3bcecc"
-  integrity sha512-Ux0fkt1PumcqLwExcEozCMEfKBxtd2JlnitXo4hR3lJW5q9G52FkgWDyPSrhblyTkX+7RgxViZTMnHxaXs99jg==
+"@zag-js/core@0.82.1", "@zag-js/core@^0.82.2":
+  version "0.82.2"
+  resolved "https://registry.yarnpkg.com/@zag-js/core/-/core-0.82.2.tgz#c140a2821e8575caaf4ba4ba177f741d6a763316"
+  integrity sha512-yj4trnU4RzO4duiZJ7uvxECg+6MPVkEbTvTwf2TynotXBYX65LGMTqvMzZP062wvdu0jvTgZ/IbCpN1gc3hmsQ==
   dependencies:
-    "@zag-js/store" "0.82.1"
-    "@zag-js/utils" "0.82.1"
+    "@zag-js/store" "0.82.2"
+    "@zag-js/utils" "0.82.2"
+
+"@zag-js/core@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@zag-js/core/-/core-1.4.2.tgz#eff0b5477086bebf4b50f851818cb38d2e7e4c48"
+  integrity sha512-y9k4aEvJk5DBadEqrNzWTG+zjwcsQ72nuVVYFoqdE3LlBTE2SOO7G+8aqMfSnzMVMpRKlNjnD/kUHKUvHOgfPA==
+  dependencies:
+    "@zag-js/dom-query" "1.4.2"
+    "@zag-js/utils" "1.4.2"
 
 "@zag-js/date-picker@0.82.1":
   version "0.82.1"
@@ -976,6 +984,13 @@
   integrity sha512-KFtbqDUykQur587hyrGi8LL8GfTS2mqBpIT0kL3E+S63Mq7U84i+hGf3VyNuInMB5ONpkNEk5JN4G9/HWQ6pAQ==
   dependencies:
     "@zag-js/types" "0.82.1"
+
+"@zag-js/dom-query@1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@zag-js/dom-query/-/dom-query-1.4.2.tgz#89fff693d0c70dca6659a86f4b686b0cf368a941"
+  integrity sha512-F6261rPnyOJgM3KKR08dqBQH5XbN/NZN60h2zwJN6EeZTGRQlNvC3JAK3Qpdu0+zd0/2DvQA0CnbWfMMz0mmQw==
+  dependencies:
+    "@zag-js/types" "1.4.2"
 
 "@zag-js/editable@0.82.1":
   version "0.82.1"
@@ -1296,6 +1311,13 @@
   dependencies:
     proxy-compare "3.0.1"
 
+"@zag-js/store@0.82.2":
+  version "0.82.2"
+  resolved "https://registry.yarnpkg.com/@zag-js/store/-/store-0.82.2.tgz#300c9fad34eb2007e75ef53057c8898c2dbbf9c8"
+  integrity sha512-tjG99kSFfnUHWMTe3y+CAqCrH/RGCB2V5y0BoasITYAqTpqbCfPJH0R2+UYsY3kLqPnE+JDkkh1TnwcqKLc0/w==
+  dependencies:
+    proxy-compare "3.0.1"
+
 "@zag-js/switch@0.82.1":
   version "0.82.1"
   resolved "https://registry.yarnpkg.com/@zag-js/switch/-/switch-0.82.1.tgz#56bc85cbf8ef333d7431f9c3332396123ec76d9d"
@@ -1428,10 +1450,27 @@
   dependencies:
     csstype "3.1.3"
 
+"@zag-js/types@1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@zag-js/types/-/types-1.4.2.tgz#6da86cc9eee9850c1b8b3db4bb31aa7dd6a7b7ef"
+  integrity sha512-CvjVZVKqSRkChivt/Bu5hr5+v8bYKM9OZmvIB7vQj5BZOsh9qBhgvPvCSZ71VQb82rykzFULhJKaKP7ROUY46w==
+  dependencies:
+    csstype "3.1.3"
+
 "@zag-js/utils@0.82.1":
   version "0.82.1"
   resolved "https://registry.yarnpkg.com/@zag-js/utils/-/utils-0.82.1.tgz#da58876a28042183f509bab18e24a36ff3f1bec0"
   integrity sha512-JUGdEjstrzB0G2AJqzQiURIl6UZ1ONYgby/pqBKX57LO5LxasQXk9oNZh8+ZAvePNC/lKqqTtyyI02YQB4XwkA==
+
+"@zag-js/utils@0.82.2":
+  version "0.82.2"
+  resolved "https://registry.yarnpkg.com/@zag-js/utils/-/utils-0.82.2.tgz#053b96930005a7b0d1bd37074a53ac0ce4ac6c96"
+  integrity sha512-tN87VEEoo240O2CzQdHvtBVPF8hHqLdpNzDT+obNIQrRj4wbNQ5Ze3Zwrd6/SoBe7ImKgkwbAlgu4k5+v9sDcA==
+
+"@zag-js/utils@1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@zag-js/utils/-/utils-1.4.2.tgz#0bc031a545d1e732432eb84f8eb798d8ba00180a"
+  integrity sha512-/B2sCmkDv3VO6+tzXF8+w6is6nr1uwBLgZmeJa7HTithRTVVYyUPGGqn1fQ9ibOS2potQz6geMmfwzVGopCw/Q==
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
